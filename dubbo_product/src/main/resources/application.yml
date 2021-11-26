@@ -1,0 +1,14 @@
+server:
+  port: 10082
+spring:
+  application:
+    name: 生产者服务
+
+dubbo:
+  application:
+    name: provider_server
+#    注册中心
+  registry:
+    address: zookeeper://localhost:2181
+  scan:
+    base-packages: com.caogq.dubbo_product.service

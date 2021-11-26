@@ -1,0 +1,10 @@
+server:
+  port: 10083
+spring:
+  application:
+    name: 消费者服务
+dubbo:
+  application:
+    name: consumer_server
+  registry:
+    address: zookeeper://localhost:2181
